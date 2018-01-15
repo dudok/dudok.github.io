@@ -15,8 +15,6 @@ body {
   background-attachment: fixed;
   }
  
-
-
 .menubox{
 position: fixed;
 top:68%;
@@ -38,17 +36,11 @@ float: right;
 opacity: 1;
 } 
 
-
-
-
 .wrapper {
   display: block;
   width:50%;
-
-  
   margin:0px auto;
- 
-}
+ }
 
 header {
   display: block;
@@ -56,8 +48,8 @@ header {
   margin-top: 0px;
   height: 50px;
   border-bottom: 5px solid #333333;
- // background: linear-gradient(#30394b, #4c5361); // gray/blue
- background: linear-gradient(#5b5b5b, #3d3d3d);
+  background: linear-gradient(#30394b, #4c5361); // gray/blue
+ //background: linear-gradient(#5b5b5b, #3d3d3d);
   
   position:fixed;
 }
@@ -71,13 +63,10 @@ height: 100%;
 position: fixed;
 z-index: -1;
 top: 50px;
-
 width: 100%;
 height: auto;
 filter: invert(80%);
 opacity: 1;
-
-
 }
 
 #backgroundpic2 {
@@ -87,7 +76,6 @@ top: 50px;
 left: 50%;
 width: 100%;
 height: auto;
-
 filter: invert(80%);
 opacity: 1;
 transform: rotate(0deg);
@@ -101,10 +89,7 @@ left: 50%;
 width: 50%;
 height: 100%;
 opacity: 1;
-
 z-index: -1;
-
-
 }
 
 .topnav {
@@ -115,11 +100,11 @@ z-index: -1;
  }
  
 section {
-  padding:150px 20px 0px 20px;
+  padding:100px 20px 50px 20px;
   z-index: 2;
-  background-color: #E8F1F2;//29302D;//# //#706563; #333333; //#7B7263;
-  
-}
+  background-color: #B4B4B4;//29302D;//# //#706563; #333333; //#7B7263;
+  min-height: 520px;
+ }
 
 #description {
   font:18px 'Orbitron', sans-serif;
@@ -220,6 +205,9 @@ h2 {
 h3, h4, h5, h6 {
   color:#494949;
 }
+h3 {font:20px 'Orbitron', sans-serif;
+    color: black;
+	}
 
 a {
   color:#267CB9;
@@ -260,8 +248,8 @@ margin: 10px;
   padding:15px 8px;
   background: #01161E;
   border-radius:5px;
-  border-left: 4px solid #333333;
-  border-right: 4px solid #333333;
+  border: 4px solid #333333;
+
   overflow-x: auto;
 }
 
