@@ -1,5 +1,8 @@
-title: Minimal theme
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+repository: pages-themes/minimal
+title: Code Stories
+description: Blog about learning to code in Python.
+author: Sander Dudok
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+github: [metadata]

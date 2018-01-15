@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](another-page).
@@ -22,19 +21,28 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 
 ### [](#header-3)Header 3
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+```python
+suit_names = ['Clubs', 'Diamonds', 'Hearths', 'Spades']
+    rank_names = [None, None, '2', '3', '4', '5', '6', '7',
+                  '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace']
+    
+    def __init__(self, suit=0, rank=2):
+        self.suit = suit
+        self.rank = rank
+        
+    def __str__(self):
+        if self.suit is not None:
+            return '%s of %s' % (Card.rank_names[self.rank],
+                             Card.suit_names[self.suit])
+        else: return 'no trump'
+        
+    def __lt__(self, other):
+        t1 = self.rank, self.suit
+        t2 = other.rank, other.suit
+        return t1 < t2
+    
+    def has_suit(self, suit):
+        return self.suit == suit
 ```
 
 #### [](#header-4)Header 4
