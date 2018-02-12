@@ -1,17 +1,15 @@
-@import "fonts";
-@import "lovelace.css";
 
 body {
 
   font: 14px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:black;
+ 
   margin: 0px;
   padding: 0px;
   font-weight:400;
   
  // background: linear-gradient(#DEF2F1, #E8FCCF); 
-  background-color: #333333;
-
+ // background: linear-gradient(#5b5b5b, #3d3d3d);
+background-color: #333333;
   background-attachment: fixed;
   }
  
@@ -40,6 +38,7 @@ opacity: 1;
   display: block;
   width:50%;
   margin:0px auto;
+  color: #B3BBB6;
  }
 
 header {
@@ -47,49 +46,11 @@ header {
   width:100%;
   margin-top: 0px;
   height: 50px;
-  border-bottom: 5px solid #333333;
-  background: linear-gradient(#30394b, #4c5361); // gray/blue
+  border-bottom: 5px solid #5b5b5b;
+ // background: linear-gradient(#30394b, #4c5361); // gray/blue
  //background: linear-gradient(#5b5b5b, #3d3d3d);
-  
+  background-color: #30394B;
   position:fixed;
-}
-
-#headerpic {
-width: 100%;
-height: 100%;
-}
-
-#backgroundpic1 {
-position: fixed;
-z-index: -1;
-top: 50px;
-width: 100%;
-height: auto;
-filter: invert(80%);
-opacity: 1;
-}
-
-#backgroundpic2 {
-position: fixed;
-z-index: -1;
-top: 50px;
-left: 50%;
-width: 100%;
-height: auto;
-filter: invert(80%);
-opacity: 1;
-transform: rotate(0deg);
-}
-
-
-#blocker {
-position: fixed;
-top: 50px;
-left: 50%;
-width: 50%;
-height: 100%;
-opacity: 1;
-z-index: -1;
 }
 
 .topnav {
@@ -102,8 +63,9 @@ z-index: -1;
 section {
   padding:100px 20px 50px 20px;
   z-index: 2;
-  background-color: #B4B4B4;//29302D;//# //#706563; #333333; //#7B7263;
-  min-height: 520px;
+  background-color: #333333;//#B4B4B4;//29302D;//# //#706563; #333333; //#7B7263;
+  border: 5px solid #5b5b5b;
+    min-height: 520px;
  }
 
 #description {
@@ -119,11 +81,9 @@ section {
 #title {
   
   text-align: center;
- 
   padding-top: 0px;
   font:40px 'Orbitron', sans-serif;
   color: white;
-  
 }
 
 .topnav a {
@@ -182,7 +142,7 @@ background-color: #efe3f4;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#222;
+  
   margin:0 0 20px;
 }
 
@@ -198,13 +158,7 @@ h1 {
   font-size:28px;
 }
 
-h2 {
-  color:#393939;
-}
 
-h3, h4, h5, h6 {
-  color:#494949;
-}
 h3 {font:20px 'Orbitron', sans-serif;
     color: black;
 	}
@@ -239,17 +193,17 @@ blockquote {
 
 code, pre {
   font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
-  color:#88958D;
+  color:#B3BBB6;
   font-size:12px;
 }
 
 pre {
-margin: 10px;
+margin: 0px;
   padding:15px 8px;
-  background: #01161E;
-  border-radius:5px;
-  border: 4px solid #333333;
-
+  background: #23171A;
+  //border-radius:5px;
+ // border: 4px solid #333333;
+border: 3px solid #5b5b5b;
   overflow-x: auto;
 }
 
