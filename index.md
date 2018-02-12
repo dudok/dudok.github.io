@@ -10,9 +10,6 @@ This will give you a great start in becoming a Python master. The second post wi
 specifically how to create a model of a card game. The card game is boerenbridge(farmerbridge), an easy version of bridge. 
 Both posts will be coming soon! 
 
-Also work still has to be done on the website. I made it almost from scratch. I know it is still ugly, but no fancy templates were used and colouring is
-not my strongest point haha. I will manage though.  
-
 Below you see a sample code of the boerenbridge model. The full code can be found on my Github page. 
 The link is on the left side of the page, next to the linkedIn block.
    
