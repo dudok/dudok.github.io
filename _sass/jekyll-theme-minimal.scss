@@ -1,45 +1,56 @@
 
 body {
-
   font: 14px/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
- 
   margin: 0px;
   padding: 0px;
   font-weight:400;
-  
- // background: linear-gradient(#DEF2F1, #E8FCCF); 
- // background: linear-gradient(#5b5b5b, #3d3d3d);
-background-color: #333333;
+  color: #B3BBB6;
+  // background: linear-gradient(#DEF2F1, #E8FCCF); 
+  // background: linear-gradient(#5b5b5b, #3d3d3d);
+  background-color: #333333;
   background-attachment: fixed;
-  }
+}
  
 .menubox{
-position: fixed;
-top:68%;
-left: 6.8%;
-max-width: 10%;
+  position: fixed;
+  top:10%;
+  left: 75.4%;
+  max-width: 25%;
+    float:left;
+}
+.boxes {
+  position: fixed;
+  top:6%;
+  max-width: 25%;
+  float:left;
+}
+#left {
+  left: 0%;
+}
+#right {
+  left: 75%;
 }
 
-.menubox a{
-opacity: 0.5;
-transition: opacity .3s ease-out;
+.menubox a, .boxes i{
+  opacity: 0.5;
+  transition: opacity .3s ease-out;
     -moz-transition: opacity .3s ease-out;
     -webkit-transition: opacity .3s ease-out;
     -o-transition: opacity .3s ease-out;
-padding-right: 6%;
-float: right;
+  padding-left: 2%;
+  float: left;
 }
 
-.menubox a:hover {
-opacity: 1;
+.menubox a:hover, i:hover {
+  opacity: 1;
 } 
 
-.wrapper {
+#wrapper {
   display: block;
   width:50%;
   margin:0px auto;
-  color: #B3BBB6;
- }
+  
+}
 
 header {
   display: block;
@@ -58,15 +69,15 @@ header {
   top: 0%;
   overflow: hidden;
   padding:0px;
- }
+}
  
 section {
   padding:100px 20px 50px 20px;
-  z-index: 2;
-  background-color: #333333;//#B4B4B4;//29302D;//# //#706563; #333333; //#7B7263;
+
+  background-color: #333333;
   border: 5px solid #5b5b5b;
-    min-height: 520px;
- }
+  min-height: 90%;
+}
 
 #description {
   font:18px 'Orbitron', sans-serif;
@@ -74,12 +85,9 @@ section {
   text-align: right;
   margin-top: -30px;
   font-stretch: expanded;
- 
-  
 }
 
 #title {
-  
   text-align: center;
   padding-top: 0px;
   font:40px 'Orbitron', sans-serif;
@@ -95,8 +103,6 @@ section {
   margin: 2px 0 2px 3px;
   text-decoration: none;
   font:18px 'Orbitron', sans-serif;
-  
-  
 }
 
 .topnav a:hover {
@@ -105,7 +111,7 @@ section {
 }
 
 .topnav a:active{
-background-color: #efe3f4;
+  background-color: #efe3f4;
 }
 
 .topnav .icon {
@@ -129,20 +135,18 @@ background-color: #efe3f4;
     float: left;
   }
   .topnav.responsive a {
-    
-	float: none;
+    float: none;
     display: block;
     text-align: left;
 	background-color: #526d9b;
 	margin: 0px;
   }
   .topnav.responsive a:first-child {
-  background: linear-gradient(#445c84, #526d9b);
+    background: linear-gradient(#445c84, #526d9b);
   }
 }
 
 h1, h2, h3, h4, h5, h6 {
-  
   margin:0 0 20px;
 }
 
@@ -159,28 +163,28 @@ h1 {
 }
 
 
-h3 {font:20px 'Orbitron', sans-serif;
-    color: black;
-	}
+h3 {
+  font:20px 'Orbitron', sans-serif;
+}
 
-a {
+section a {
   color:#267CB9;
   text-decoration:none;
 }
 
-a:hover, a:focus {
+section a:hover, a:focus {
   color:#069;
   font-weight: bold;
 }
 
-a small {
+section a small {
   font-size:11px;
   color:#777;
   margin-top:-0.3em;
   display:block;
 }
 
-a:hover small {
+section a:hover small {
   color:#777;
 }
 
@@ -198,12 +202,12 @@ code, pre {
 }
 
 pre {
-margin: 0px;
+  margin: 0px;
   padding:15px 8px;
   background: #23171A;
   //border-radius:5px;
- // border: 4px solid #333333;
-border: 3px solid #5b5b5b;
+  // border: 4px solid #333333;
+  border: 3px solid #5b5b5b;
   overflow-x: auto;
 }
 
@@ -230,8 +234,6 @@ th {
 img {
   max-width:100%;
 }
-
-
 
 header ul {
   list-style:none;
@@ -317,22 +319,22 @@ footer {
     display:inline;
   }
 .wrapper {
-  width: 75%;
-  margin-left: 25%;
+    width: 75%;
+    margin-left: 25%;
   }
   header ul {
     position:absolute;
     right:50px;
     top:52px;
-	}
+  }
   section {
-  padding: 150px 20px;
+    padding: 150px 20px;
   }
   #blocker {
-     display: none;
+    display: none;
   }
   #description {
-  display:none;
+    display:none;
   }
 }
 
@@ -340,8 +342,6 @@ footer {
   body {
     word-wrap:break-word;
   }
-  
-  
   
   header {
     padding:0;
@@ -359,11 +359,11 @@ footer {
 @media print, screen and (max-width: 480px) {
   
   .wrapper {
-  margin-left: 0;
-  width: 100%;
+    margin-left: 0;
+    width: 100%;
   }
   section {
-  padding: 150px 10px;
+    padding: 150px 10px;
   }
   header ul {
     width:99%;
@@ -373,10 +373,10 @@ footer {
     width:33%;
   }
   .menubox a{
-  display: none;
+    display: none;
   }
   #title {
-  display:none;
+    display:none;
   }
 }
 
