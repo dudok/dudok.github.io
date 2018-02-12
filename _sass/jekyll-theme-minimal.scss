@@ -5,30 +5,32 @@ body {
   padding: 0px;
   font-weight:400;
   color: #B3BBB6;
+  height: 100%;
   // background: linear-gradient(#DEF2F1, #E8FCCF); 
   // background: linear-gradient(#5b5b5b, #3d3d3d);
   background-color: #333333;
+
+ // background: linear-gradient(#DEF2F1, #E8FCCF); 
+ // background: linear-gradient(#5b5b5b, #3d3d3d);
+background-color: #333333;
+
   background-attachment: fixed;
 }
  
-.menubox{
-  position: fixed;
-  top:10%;
-  left: 75.4%;
-  max-width: 25%;
-    float:left;
-}
 .boxes {
   position: fixed;
-  top:6%;
-  max-width: 25%;
-  float:left;
+  top:60px;
+  width: 25%;
+
 }
 #left {
-  left: 0%;
+  margin-left: 0%;
+  
+    
 }
 #right {
-  left: 75%;
+  margin-left: 75%;
+    
 }
 
 .menubox a, .boxes i{
@@ -45,12 +47,7 @@ body {
   opacity: 1;
 } 
 
-#wrapper {
-  display: block;
-  width:50%;
-  margin:0px auto;
-  
-}
+
 
 header {
   display: block;
@@ -72,11 +69,14 @@ header {
 }
  
 section {
+    
+    display: block;
   padding:100px 20px 50px 20px;
-
   background-color: #333333;
   border: 5px solid #5b5b5b;
-  min-height: 90%;
+  margin: 0 25%;
+  
+    height: 100vh;
 }
 
 #description {
@@ -92,6 +92,10 @@ section {
   padding-top: 0px;
   font:40px 'Orbitron', sans-serif;
   color: white;
+}
+
+footer {
+    margin-left: 25%;
 }
 
 .topnav a {
@@ -314,22 +318,22 @@ footer {
 }
 
 @media print, screen and (max-width: 960px) {
-
+    #right {
+        display: none;
+    }
   header a small {
     display:inline;
   }
-.wrapper {
-    width: 75%;
-    margin-left: 25%;
-  }
+    section {
+        width: 75%;
+        margin-left: 25%;
+    }
   header ul {
     position:absolute;
     right:50px;
     top:52px;
   }
-  section {
-    padding: 150px 20px;
-  }
+  
   #blocker {
     display: none;
   }
@@ -357,13 +361,15 @@ footer {
 }
 
 @media print, screen and (max-width: 480px) {
-  
-  .wrapper {
+    #left {
+        display: none;
+    }
+  section {
     margin-left: 0;
     width: 100%;
   }
   section {
-    padding: 150px 10px;
+    padding: 100px 10px;
   }
   header ul {
     width:99%;

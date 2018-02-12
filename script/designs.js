@@ -1,4 +1,4 @@
-
+var boxes;
 
 function myMenuButton() {
     var x = document.getElementById("myTopnav");
@@ -11,29 +11,34 @@ function myMenuButton() {
 
 $('#title').fadeOut(8000);
 
+function appendBoxes(tag, side, size='3.5vw', color='#617B6F' ) {
+    boxes = $(side);
+    $(tag).appendTo(boxes).css({'font-size':size, 'color':color});
+}
+
+
 function createSquares(side) {
-    var boxes = $(side);
     for (let i = 0; i <= 140; i++) {
-        if (side==='#right') {
+        if (side==='#left') {
             switch (i) {
                 case 0:
-                    boxes.append('<a href="https://nl.linkedin.com/in/sander-dudok-34675488" target="_blank"><i class="fa fa-linkedin-square" style="font-size:4.2vw;color:#617B6F"></i></a>');
+                    appendBoxes('<a href="https://nl.linkedin.com/in/sander-dudok-34675488" target="_blank"><i class="fa fa-linkedin-square"></i></a>', '#left');
                     break;
                 case 1:
-                    boxes.append('<a href="https://github.com/dudok" target="_blank"><i class="fa fa-github-square" style="font-size:4.2vw;color:#617B6F"></i></a>');
+                    appendBoxes('<a href="https://github.com/dudok" target="_blank"><i class="fa fa-github-square"></i></a>', "#left");
                     break;
                 case 2:
-                    boxes.append('<a href="#sander.dudok@gmail.com"><i class="fa fa-envelope-square" style="font-size:4.2vw;color:#617B6F"></i></a>');
+                    appendBoxes('<a href="#sander.dudok@gmail.com"><i class="fa fa-envelope-square"></i></a>', "#left");
                     break;
                 default:  
-                    boxes.append('<i class="fa fa-square" style="font-size:4.2vw;color:#617B6F"></i>'); 
+                    appendBoxes('<i class="fa fa-square"></i>', "#left"); 
             }
         } else {
-            boxes.append('<i class="fa fa-square" style="font-size:4.2vw;color:#617B6F"></i>');
+            appendBoxes('<i class="fa fa-square"></i>', '#right');
         }
     }
     $('.boxes').children().each( function() {
-        if (Math.random() >=0.7 ) {
+        if (Math.random() >=0.7 && $(this).hasClass('fa fa-square')) {
             $(this).css("color", "#333");
         }
     });
