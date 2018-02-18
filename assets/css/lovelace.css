@@ -42,7 +42,7 @@
 .highlight .nd { color: #287088 } /* Name.Decorator */
 .highlight .ni { color: #709030 } /* Name.Entity */
 .highlight .ne { color: #908828 } /* Name.Exception */
-.highlight .nf { color: white; font-weight: 500 } /* Name.Function */
+.highlight .nf { color: white } /* Name.Function */
 .highlight .nl { color: #289870 } /* Name.Label */
 .highlight .nn { color: #289870 } /* Name.Namespace */
 .highlight .nt { color: #2838b0 } /* Name.Tag */
